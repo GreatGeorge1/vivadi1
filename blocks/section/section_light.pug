@@ -1,0 +1,8 @@
+mixin section_light(data)
+    +b.SECTION.section_light
+        +e.DIV.container
+            each item in data
+                +e.DIV.name--light
+                    p=item.name
+                +e.DIV.text=item.text
+                +e.A.btn--light(href=item.href) Читать дальше

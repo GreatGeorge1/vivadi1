@@ -1,0 +1,10 @@
+mixin header(data)
+  div.header-fix
+  +b.HEADER.header
+    +e.DIV.container
+      +e.DIV.nav
+        +b.NAV.header-nav
+          each item in data.menu
+            +e.DIV.item
+              +e.A.link(href=item.href)= item.text
+     
