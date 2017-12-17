@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "mdi": "^1.9.33"
+    "mdi": "^1.9.33",
+    "jquery": "^3.2.1"
   }
 }

@@ -8,7 +8,9 @@
     z-index: -100
     &__container 
         +container()
-        padding: 0
+        padding: 0 10px
+        @media #{$_md}
+            justify-content: space-around
     &-map,
     &-adds,
     &-contacts
@@ -20,12 +22,16 @@
             margin: 5px 0
             margin-left: 10px
             font-family: $head-font
-            font-size: 80%
-           
-           
+            font-size: 80%   
     &__logo
         margin-top: 55px
         height: 100px
+        @media #{$_md}
+            visibility: hidden
+            margin: 0
+            width: 0
+            height: 0
+            padding: 0
     &__title
         font-family: $head-font
         font-weight: 900

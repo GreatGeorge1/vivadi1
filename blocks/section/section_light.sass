@@ -1,12 +1,13 @@
 .section_light
-    margin-top: 130px
+    
     background: white
     font-family: $head-font
     border: 1px solid #cccbcb
     &__container
         +container()
-        padding: 0
+        padding: 0 10px
         padding-top: 15px
+        flex-direction: column
         
     &__name
         display: inline-block
@@ -38,6 +39,7 @@
         color: black
         font-weight: 900
         font-size: 80%
+        align-self: flex-end
         &:hover
             background: $viking
             transition: ease 0.2s

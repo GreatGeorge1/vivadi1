@@ -1,7 +1,11 @@
 .page
   font-family: $text-font
   font-weight: 500
-  font-size: 18px
+  font-size: 16px
+  @media #{$xlg}
+    font-size: 18px
+  @media #{$_md}
+    font-size: 14px
   &__wrap
     min-width: 320px
     
@@ -9,5 +13,22 @@
 
 .bg
   background: white
+
+.container
+  +container()
+.btn 
+  display: inline-block
+  text-decoration: none
+  padding: 15px 20px
+  background: $orange
+  color: black
+  font-family: $head-font
+  font-weight: 900
+  margin: 20px auto
+  
+  &:hover
+    background: $viking
+    transition: ease 0.2s
+    color: $white
   
 
