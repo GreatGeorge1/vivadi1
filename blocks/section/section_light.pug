@@ -3,6 +3,7 @@ mixin section_light(data)
         +e.DIV.container
             each item in data
                 +e.DIV.name--light
-                    p=item.name
+                    p.namefont=item.name
                 +e.DIV.text=item.text
-                +e.A.btn--light(href=item.href) Читать дальше
+                if item.href
+                    +e.A.btn(href=item.href) Читать дальше

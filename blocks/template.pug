@@ -6,7 +6,8 @@ include header/header
 include head-line/head-line
 include search/search
 include footer/footer
-
+include section/section
+include section/section_light
 
 doctype html
 html(lang="ru")
@@ -19,39 +20,39 @@ html(lang="ru")
 				"description": "Floor catalog"
 			})
 			
-		+b.BODY.page
-			+e.DIV.wrap
-				div.bg
-					block header
-						+head-line()
-						+header({
-							"menu": [
-								{
-									"text": "Главная",
-									"href": "index.html",
-									"active": 1
-								},
-								{
-									"text": "Товары",
-									"href": "category.html"
-								},
-								{
-									"text": "О компании",
-									"href": "index.html"
-								},
-								{
-									"text": "Новости",
-									"href": "index.html"
-								},
-								{
-									"text": "Контакты",
-									"href": "index.html"
-								}
-							]
-						})
+	+b.BODY.page
+		+e.DIV.wrap
+			div.bg
+				block header
+					+head-line()
+					+header({
+						"menu": [
+							{
+								"text": "Главная",
+								"href": "index.html",
+								"active": 1
+							},
+							{
+								"text": "Товары",
+								"href": "category.html"
+							},
+							{
+								"text": "О компании",
+								"href": "about.html"
+							},
+							{
+								"text": "Новости",
+								"href": "index.html"
+							},
+							{
+								"text": "Контакты",
+								"href": "contacts.html"
+							}
+						]
+					})
 						
-					block content
-						div content
+				block content
+					div content
 
 				block footer
 					+footer()

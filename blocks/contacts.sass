@@ -1,0 +1,46 @@
+@import "_base/reset"
+@import "_base/variables"
+@import "_base/fonts"
+@import "_base/grid"
+
+@import "main"
+@import "map/map"
+
+.contacts
+    +section_light()
+    
+    .section_light 
+            &__container
+                +container()
+                padding: 0 10px
+                padding-top: 0px
+                margin-top: 40px
+            &__container2
+                +container()
+            &__name
+                display: inline-block
+                
+                .namefont
+                    margin-top: 0
+                    margin-bottom: 20px
+                    display: inline-block
+                    vertical-align: center
+                    font-size: 21px
+                    width: 200px
+                    height: auto
+                    
+                    font-weight: 900
+                    text-transform: uppercase
+                    padding: 15px 
+                    
+                    
+                    text-align: center
+            &__text
+                line-height: 3
+                align-self: flex-start
+    .map
+        min-width: 500px
+        max-width: 50%
+        min-height: 300px
+        max-height: 500px
+        align-self: flex-end

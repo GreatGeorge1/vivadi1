@@ -3,6 +3,7 @@ mixin section(data)
         +e.DIV.container
             each item in data
                 +e.DIV.name
-                    p=item.name
-                +e.DIV.text=item.text
-                +e.A.btn(href=item.href) Читать дальше
+                    p.namefont=item.name
+                +e.P.text=item.text
+                if item.href
+                    +e.A.btn(href=item.href) Читать дальше
