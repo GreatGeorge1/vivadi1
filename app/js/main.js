@@ -1,4 +1,30 @@
 
+jQuery(document).ready(function($){
+	var secondaryNav = $('.header'),
+	fix = $('.header-fix'),
+	secondaryNavTopPosition = secondaryNav.offset().top;
+ 
+	$(window).on('scroll', function(){
+		
+		if($(window).scrollTop() > secondaryNavTopPosition ) {
+			secondaryNav.addClass('is-fixed');
+			fix.addClass('fix');	
+			// setTimeout(function() {
+			// 	secondaryNav.addClass('animate-children');
+			// 	$('#cd-logo').addClass('slide-in');
+			// 	$('.cd-btn').addClass('slide-in');
+			// }, 50);
+		} else {
+			secondaryNav.removeClass('is-fixed');
+			fix.removeClass('fix');
+			// setTimeout(function() {
+			// 	secondaryNav.removeClass('animate-children');
+			// 	$('#cd-logo').removeClass('slide-in');
+			// 	$('.cd-btn').removeClass('slide-in');
+			// }, 50);
+		}
+	});
+});
 function initMap() {
     var uluru = {lat: 50.409507, lng: 30.604092};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -226,32 +252,6 @@ function initMap() {
     });
 }
 
-jQuery(document).ready(function($){
-	var secondaryNav = $('.header'),
-	fix = $('.header-fix'),
-	secondaryNavTopPosition = secondaryNav.offset().top;
- 
-	$(window).on('scroll', function(){
-		
-		if($(window).scrollTop() > secondaryNavTopPosition ) {
-			secondaryNav.addClass('is-fixed');
-			fix.addClass('fix');	
-			// setTimeout(function() {
-			// 	secondaryNav.addClass('animate-children');
-			// 	$('#cd-logo').addClass('slide-in');
-			// 	$('.cd-btn').addClass('slide-in');
-			// }, 50);
-		} else {
-			secondaryNav.removeClass('is-fixed');
-			fix.removeClass('fix');
-			// setTimeout(function() {
-			// 	secondaryNav.removeClass('animate-children');
-			// 	$('#cd-logo').removeClass('slide-in');
-			// 	$('.cd-btn').removeClass('slide-in');
-			// }, 50);
-		}
-	});
-});
 // Ok, the CSS is complete. Now we need to hide the input and make it appear on clicking the icon.
 // Now, we have a small problem. Click
 //ing on search butotn doesnt perform any search and the input element hides. To make search button work, we'll use a flag

@@ -525,6 +525,173 @@ p {
       transition: ease 0.2s;
       color: white; }
 
+#mainWrapper {
+  width: 80%;
+  padding-left: 10%; }
+  #mainWrapper #content {
+    clear: both;
+    overflow: auto;
+    padding-top: 29px; }
+    #mainWrapper #content .sidebar {
+      font-family: 'Montserrat', sans-serif;
+      color: #929292;
+      float: left;
+      width: 20%;
+      padding-left: 3%;
+      padding-right: 3%;
+      text-align: center;
+      background-color: #f6f6f6;
+      padding-top: 36px;
+      height: 784px; }
+      #mainWrapper #content .sidebar #menubar {
+        text-align: left;
+        color: #929292;
+        position: relative;
+        left: 0%; }
+        #mainWrapper #content .sidebar #menubar .menu {
+          margin-bottom: 29px; }
+          #mainWrapper #content .sidebar #menubar .menu ul li a {
+            color: #929292;
+            text-decoration: none;
+            font-size: 14px; }
+          #mainWrapper #content .sidebar #menubar .menu ul li a:hover {
+            color: #6b6161;
+            text-decoration: none; }
+          #mainWrapper #content .sidebar #menubar .menu h2 {
+            font-size: 14px; }
+      #mainWrapper #content .sidebar #search {
+        width: 100%;
+        -webkit-border-radius: 0px;
+                border-radius: 0px;
+        height: 42px;
+        text-align: center;
+        color: #d0cfcf;
+        font-size: 14px;
+        margin-bottom: 21px; }
+    #mainWrapper #content .mainContent {
+      float: left;
+      width: 70%;
+      text-align: center;
+      padding-left: 4%; }
+      #mainWrapper #content .mainContent .productRow {
+        overflow: auto;
+        color: #929292; }
+        #mainWrapper #content .mainContent .productRow .productInfo {
+          float: left;
+          padding-left: 5%;
+          padding-right: 5%;
+          width: 22%; }
+          #mainWrapper #content .mainContent .productRow .productInfo .price {
+            font-family: 'Montserrat', sans-serif;
+            color: #929292;
+            font-size: 22px;
+            position: relative;
+            padding: 10px; }
+          #mainWrapper #content .mainContent .productRow .productInfo .productContent {
+            position: relative;
+            font-size: 14px;
+            font-family: source-sans-pro, sans-serif;
+            font-style: normal;
+            font-weight: 200;
+            color: #929292;
+            white-space: pre-wrap;
+            padding: 5px; }
+          #mainWrapper #content .mainContent .productRow .productInfo .buyButton {
+            position: relative;
+            width: 84%;
+            background-color: #d0cfcf;
+            height: 35px;
+            color: white;
+            border-style: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 20px; }
+          #mainWrapper #content .mainContent .productRow .productInfo div img {
+            width: 100%; }
+
+.menu ul li {
+  list-style-type: none;
+  font-size: x-large;
+  position: relative;
+  left: 35px;
+  padding-top: 12px; }
+
+@media screen and (max-width: 700px) {
+  #mainWrapper #content {
+    position: relative;
+    top: -22px;
+    width: 100%;
+    overflow: hidden; }
+    #mainWrapper #content .sidebar {
+      float: none;
+      width: 100%;
+      height: auto;
+      overflow: auto;
+      padding-left: 12%;
+      padding-top: 0px; }
+      #mainWrapper #content .sidebar #menubar {
+        position: relative;
+        left: -7%;
+        overflow: hidden;
+        width: 95%;
+        padding-top: 0px; }
+        #mainWrapper #content .sidebar #menubar .menu {
+          width: 100%;
+          text-align: center;
+          position: relative;
+          top: 16px; }
+          #mainWrapper #content .sidebar #menubar .menu h2 {
+            display: inline;
+            font-size: medium;
+            padding-right: 6%; }
+          #mainWrapper #content .sidebar #menubar .menu ul {
+            display: inline; }
+            #mainWrapper #content .sidebar #menubar .menu ul li {
+              display: inline;
+              font-size: medium;
+              padding-left: 0%;
+              padding-right: 3%; }
+            #mainWrapper #content .sidebar #menubar .menu ul .notimp {
+              display: none; }
+      #mainWrapper #content .sidebar #search {
+        display: none; }
+      #mainWrapper #content .sidebar hr {
+        display: none; }
+    #mainWrapper #content .mainContent {
+      overflow: hidden;
+      width: 95%;
+      margin-top: 40px; }
+      #mainWrapper #content .mainContent .productRow .productInfo .price {
+        font-size: 19px; }
+      #mainWrapper #content .mainContent .productRow .productInfo .productContent {
+        font-size: 16px; }
+      #mainWrapper #content .mainContent .productRow .productInfo .buyButton {
+        font-size: 15px; } }
+
+@media screen and (max-width: 480px) {
+  #mainwrapper #content .sidebar #menubar {
+    position: relative;
+    left: -8%;
+    text-align: center; }
+    #mainwrapper #content .sidebar #menubar .menu h2 {
+      width: 100%;
+      display: block; }
+    #mainwrapper #content .sidebar #menubar .menu ul {
+      position: relative;
+      padding-left: 24%; }
+  #mainwrapper #content .mainContent {
+    margin-top: -81px;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px; }
+    #mainwrapper #content .mainContent .productRow .productInfo {
+      width: 100%;
+      display: block;
+      padding-left: 0px;
+      padding-right: 0px;
+      position: relative;
+      left: -2%; } }
+
 .footer {
   background: #2C3E50;
   color: white;

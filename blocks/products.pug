@@ -1,0 +1,34 @@
+extends template
+
+include products/products
+
+block header
+    +head-line()
+    +header({
+    	"menu": [
+    	{
+    	    "text": "Главная",
+    		"href": "index.html"
+    	},
+    	{
+    		"text": "Товары",
+    		"href": "category.html",
+            "active": 1
+    	},
+    	{
+    		"text": "О компании",
+    		"href": "about.html"
+    	},
+    	{
+    		"text": "Новости",
+    		"href": "index.html"
+    	},
+    	{
+    		"text": "Контакты",
+    		"href": "contacts.html"
+    	}
+        ]
+    })
+
+block content
+        +products()
