@@ -49,95 +49,147 @@
           </div>
         </header>
         <div class="products">
-          <div id="mainWrapper">
-            <div id="content">
-              <section class="sidebar"> 
-                <input type="text" id="search" value="search"/>
-                <div id="menubar">
-                  <nav class="menu">
-                    <h2>MENU ITEM 1</h2>
-                    <hr/>
-                    <ul> 
-                      <li><a href="#" title="Link">Link 1</a></li>
-                      <li><a href="#" title="Link">Link 2</a></li>
-                      <li><a href="#" title="Link">Link 3</a></li>
-                      <li class="notimp"><a href="#" title="Link">Link 4</a></li>
-                    </ul>
-                  </nav>
-                  <nav class="menu">
-                    <h2>MENU ITEM 2 </h2>
-                    <hr/>
-                    <ul>
-                      <li><a href="#" title="Link">Link 1</a></li>
-                      <li><a href="#" title="Link">Link 2</a></li>
-                      <li><a href="#" title="Link">Link 3</a></li>
-                      <li class="notimp"><a href="#" title="Link">Link 4</a></li>
-                    </ul>
-                  </nav>
+          <div class="products-path">
+            <div class="products-path__container"><a href="#">Товары</a><a href="#">Ковровые корытия</a><a href="#">Коммерческий ковролин</a>
+            </div>
+          </div>
+          <div class="products__container">
+            <div class="products-sidebar">       
+              <div class="products-sidebar__menubar"><input class="products-sidebar__search" placeholder="Поиск" type="text"/>
+                <nav class="products-sidebar__menu">
+                  <h2>Категория</h2>
+                  <hr/>
+                  <ul> 
+                    <li><a href="#" title="Link">Ковровые покрытия</a></li>
+                  </ul>
+                </nav>
+                <nav class="products-sidebar__menu">
+                  <h2>Подкатегории</h2>
+                  <hr/>
+                  <ul> 
+                    <li>
+                      <label>Коммерческий ковролин
+                        <input type="checkbox" checked="checked"/>
+                      </label>
+                    </li>
+                    <li>
+                      <label>Офисный ковролин
+                        <input type="checkbox"/>
+                      </label>
+                    </li>
+                    <li>
+                      <label>Ковровая плитка
+                        <input type="checkbox"/>
+                      </label>
+                    </li>
+                    <li class="notimp">
+                      <label>Бытовой ковролин
+                        <input type="checkbox"/>
+                      </label>
+                    </li>
+                  </ul>
+                </nav>
+                <nav class="products-sidebar__menu">
+                  <h2>Производитель</h2>
+                  <hr/>
+                  <ul> 
+                    <li>
+                      <label>arcedition
+                        <input type="checkbox"/>
+                      </label>
+                    </li>
+                    <li>
+                      <label>armstrong
+                        <input type="checkbox"/>
+                      </label>
+                    </li>
+                    <li>
+                      <label>itc
+                        <input type="checkbox"/>
+                      </label>
+                    </li>
+                    <li class="notimp">
+                      <label>condor           
+                        <input type="checkbox"/>
+                      </label>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="products-main">
+              <div class="products-main__container">
+                <div class="products-item"><a href="product.html">
+                    <div>
+                      <div class="products-item__img" alt="sample" style="background-image:url('img/sample.jpg');background-size:cover;">
+                      </div>
+                    </div>
+                    <p class="products-item__name">Название коллекции/
+                    </p>
+                    <p class="products-item__article">Артикул
+                    </p></a>
                 </div>
-              </section>
-              <section class="mainContent">
-                <div class="productRow">
-                  <article class="productInfo">
-                    <div><img alt="sample" style="background:#f3f3f3;" src="img/200x200.png"/></div>
-                    <p class="price">$50</p>
-                    <p class="productContent">Content holder </p>
-                    <input class="buyButton" type="button" name="button" value="Buy"/>
-                  </article>
-                  <article class="productInfo">
-                    <div><img alt="sample" style="background:#f3f3f3;" src="img/200x200.png"/></div>
-                    <p class="price">$50</p>
-                    <p class="productContent">Content holder </p>
-                    <input class="buyButton" type="button" name="button" value="Buy"/>
-                  </article>
-                  <article class="productInfo">
-                    <div><img alt="sample" style="background:#f3f3f3;" src="img/200x200.png"/></div>
-                    <p class="price">$50</p>
-                    <p class="productContent">Content holder </p>
-                    <input class="buyButton" type="button" name="button" value="Buy"/>
-                  </article>
+                <div class="products-item"><a href="product.html">
+                    <div>
+                      <div class="products-item__img" alt="sample" style="background-image:url('img/sample.jpg');background-size:cover;">
+                      </div>
+                    </div>
+                    <p class="products-item__name">Название коллекции/
+                    </p>
+                    <p class="products-item__article">Артикул
+                    </p></a>
                 </div>
-                <div class="productRow">
-                  <article class="productInfo">
-                    <div><img alt="sample" style="background:#f3f3f3;" src="img/200x200.png"/></div>
-                    <p class="price">$50</p>
-                    <p class="productContent">Content holder </p>
-                    <input class="buyButton" type="button" name="button" value="Buy"/>
-                  </article>
-                  <article class="productInfo">
-                    <div><img alt="sample" style="background:#f3f3f3;" src="img/200x200.png"/></div>
-                    <p class="price">$50</p>
-                    <p class="productContent">Content holder </p>
-                    <input class="buyButton" type="button" name="button" value="Buy"/>
-                  </article>
-                  <article class="productInfo">
-                    <div><img alt="sample" style="background:#f3f3f3;" src="img/200x200.png"/></div>
-                    <p class="price">$50</p>
-                    <p class="productContent">Content holder </p>
-                    <input class="buyButton" type="button" name="button" value="Buy"/>
-                  </article>
+                <div class="products-item"><a href="product.html">
+                    <div>
+                      <div class="products-item__img" alt="sample" style="background-image:url('img/sample.jpg');background-size:cover;">
+                      </div>
+                    </div>
+                    <p class="products-item__name">Название коллекции/
+                    </p>
+                    <p class="products-item__article">Артикул
+                    </p></a>
                 </div>
-                <div class="productRow">
-                  <article class="productInfo">
-                    <div><img alt="sample" style="background:#f3f3f3;" src="img/200x200.png"/></div>
-                    <p class="price">$50</p>
-                    <p class="productContent">Content holder </p>
-                    <input class="buyButton" type="button" name="button" value="Buy"/>
-                  </article>
-                  <article class="productInfo">
-                    <div><img alt="sample" style="background:#f3f3f3;" src="img/200x200.png"/></div>
-                    <p class="price">$50</p>
-                    <p class="productContent">Content holder </p>
-                    <input class="buyButton" type="button" name="button" value="Buy"/>
-                  </article>
-                  <article class="productInfo">
-                    <div><img alt="sample" style="background:#f3f3f3;" src="img/200x200.png"/></div>
-                    <p class="price">$50</p>
-                    <p class="productContent">Content holder </p>
-                    <input class="buyButton" type="button" name="button" value="Buy"/>
-                  </article>
+                <div class="products-item"><a href="product.html">
+                    <div>
+                      <div class="products-item__img" alt="sample" style="background-image:url('img/sample.jpg');background-size:cover;">
+                      </div>
+                    </div>
+                    <p class="products-item__name">Название коллекции/
+                    </p>
+                    <p class="products-item__article">Артикул
+                    </p></a>
                 </div>
-              </section>
+                <div class="products-item"><a href="product.html">
+                    <div>
+                      <div class="products-item__img" alt="sample" style="background-image:url('img/sample.jpg');background-size:cover;">
+                      </div>
+                    </div>
+                    <p class="products-item__name">Название коллекции/
+                    </p>
+                    <p class="products-item__article">Артикул
+                    </p></a>
+                </div>
+                <div class="products-item"><a href="product.html">
+                    <div>
+                      <div class="products-item__img" alt="sample" style="background-image:url('img/sample.jpg');background-size:cover;">
+                      </div>
+                    </div>
+                    <p class="products-item__name">Название коллекции/
+                    </p>
+                    <p class="products-item__article">Артикул
+                    </p></a>
+                </div>
+                <div class="products-item"><a href="product.html">
+                    <div>
+                      <div class="products-item__img" alt="sample" style="background-image:url('img/sample.jpg');background-size:cover;">
+                      </div>
+                    </div>
+                    <p class="products-item__name">Название коллекции/
+                    </p>
+                    <p class="products-item__article">Артикул
+                    </p></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

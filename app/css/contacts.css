@@ -10,8 +10,7 @@
   display: flex; }
   @media (min-width: 320px) {
     .section__container, .section_light__container, .contacts .section_light__container, .contacts .section_light__container2 {
-      width: 100%;
-      padding: 0 15px; } }
+      width: 100%; } }
   @media (min-width: 767px) {
     .section__container, .section_light__container, .contacts .section_light__container, .contacts .section_light__container2 {
       width: 750px; } }
