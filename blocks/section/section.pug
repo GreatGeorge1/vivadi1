@@ -1,9 +1,0 @@
-mixin section(data)
-    +b.SECTION.section
-        +e.DIV.container
-            each item in data
-                +e.DIV.name
-                    p.namefont=item.name
-                +e.P.text=item.text
-                if item.href
-                    +e.A.btn(href=item.href) Читать дальше
